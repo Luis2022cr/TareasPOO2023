@@ -1,0 +1,28 @@
+﻿@model Propiedades
+
+<div class="container">
+    <h1>Editar Tareas</h1>
+    <hr />
+    <form asp-controller="Home" asp-action="Editar" >
+        <div class="col">
+            <label class="form-label">N° Tarea: </label>
+            <input type="text" name="Codigo" required />
+        </div>
+        <div class="col">
+            <label class="form-label">Título: </label>
+            <input type="text" name="Titulo" required />
+        </div>
+        <div class="col">
+            <label class="form-label">Descripción: </label>
+            <textarea name="Descripcion" required></textarea>
+        </div>
+        <div class="col">
+            <label class="form-label">Fecha de Vencimiento: </label>
+            <input class="form-control" type="date" name="FechaVencimiento" required />
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button class="btn btn-primary" data-bs-dismiss="modal">Guardar Cambios</button>
+        </div>
+    </form>
+</div>
